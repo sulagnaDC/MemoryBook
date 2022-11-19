@@ -1,0 +1,13 @@
+netstat -a -o -n
+taskkill /F /PID 5548
+
+String query = "Insert into tbl_slam (user_id, slam_id, friend_id, slam_status) VALUES(:userid,:slamid,:friendid,"COMPLETED")";
+String query = "Insert into tbl_slam_details (slam_id, meeting_date, best_memory) VALUES(:slamid,:meetingdate,:bestmemory)";
+
+echo "# MemoryBook" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sulagnaDC/MemoryBook.git
+git push -u origin main
